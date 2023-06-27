@@ -1,9 +1,9 @@
 const axios = require('axios')
 
-const endpoint = 'http://localhost:8080/v1/nfts?page_size=5';
+const endpoint = 'https://api.blockspan.com/v1/nfts?page_size=5';
 const headers = {
   accept: 'application/json',
-  'X-API-KEY': '2jhzbqIWanB8puiqySBIWJVf6Ovp7oPW',
+  'X-API-KEY': 'YOUR_BLOCKSPAN_API_KEY',
 };
 
 axios.get(endpoint, { headers }).then(response => {
